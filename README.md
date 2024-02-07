@@ -8,6 +8,8 @@ $ catkin_make --only-pkg-with-deps blueberry-detection-ros
 ```
 ### Crear un nuevo proyecto en ros?
 ```bash
+$ cd ~/catkin_ws/src
 $ catkin_create_pkg myRosProject rospy roscpp std_msgs
+$ cd ~/catkin_ws
 $ catkin_make
 ```
