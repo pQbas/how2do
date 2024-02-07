@@ -1,5 +1,15 @@
 # ROS
 
+### Configurar bashrc luego de descargar ros?
+
+Abrir el `bashrc` y copiar los dos comandos
+
+```bash
+$ gedit ~/.bashrc
+> source /opt/ros/noetic/setup.bash
+> source /home/pqbas/catkin_ws/devel/setup.bash
+```
+
 ### Descargar un proyecto de Github y compilarlo?
 ```bash
 $ git clone https://github.com/pQbas/blueberry-detection-ros.git
