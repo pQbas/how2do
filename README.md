@@ -7,7 +7,7 @@ Abrir el `bashrc` y copiar los dos comandos
 ```bash
 $ gedit ~/.bashrc
 > source /opt/ros/noetic/setup.bash
-> source /home/pqbas/catkin_ws/devel/setup.bash
+> source /home/[YOUR_USER]/catkin_ws/devel/setup.bash
 ```
 
 ### Descargar un proyecto de Github y compilarlo?
