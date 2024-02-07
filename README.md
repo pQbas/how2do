@@ -12,4 +12,5 @@ $ cd ~/catkin_ws/src
 $ catkin_create_pkg myRosProject rospy roscpp std_msgs
 $ cd ~/catkin_ws
 $ catkin_make
+$ source ~/catkin_ws/devel/setup.bash
 ```
