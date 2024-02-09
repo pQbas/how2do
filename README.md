@@ -25,6 +25,22 @@ git branch backup-master
 git reset --hard origin/master
 ```
 
+### como crear tu propia rama y trabajar con esta?
+```bash
+git checkout -b [your-new-branch]
+git add .
+git commit -m 'write-your-message'
+git push origin [your-new-branch]
+```
+
+
+# Linux
+### crear una carpeta que sea un enlace simbolico?
+Con el siguiente código se va a crear la carpeta `./my_symlink_folder` que va a apuntar a `~/my/original/folder`. 
+
+```bash
+ln -s ~/my/original/folder ./my_symlink_folder
+```
 
 # ROS
 
