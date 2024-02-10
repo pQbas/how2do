@@ -42,6 +42,13 @@ Con el siguiente código se va a crear la carpeta `./my_symlink_folder` que va a
 ln -s ~/my/original/folder ./my_symlink_folder
 ```
 
+### como eliminar un link symbolico?
+```
+unlink my_symlink_folder
+```
+
+
+
 # ROS
 
 ### configurar bashrc luego de descargar ros?
