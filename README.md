@@ -75,3 +75,22 @@ $ cd ~/catkin_ws
 $ catkin_make
 $ source ~/catkin_ws/devel/setup.bash
 ```
+
+## C++
+
+### instalar un paquete?
+```bash
+git clone [repo]
+cd [repo]
+mkdir build
+cd build
+cmake ..
+cmake --build . -j 4
+sudo make install
+```
+
+### desinstalar un paquete?
+```bash
+cd [repo]/build
+sudo make uninstall
+```
