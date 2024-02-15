@@ -1,6 +1,7 @@
 ### how2do
 
 ### a cilinder in solid-works?
+`cilinder.sldprt`
 ```
 1. draw a circle in top-plane (sketch>circle>draw)
 2. extrude the circle (features>extrude), indicate the width (ex. 3in), enter
