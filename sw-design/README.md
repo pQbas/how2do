@@ -1,4 +1,4 @@
-### how2do
+### how2do/sw-design
 
 ### a cilinder in solid-works?
 `cilinder.sldprt`
