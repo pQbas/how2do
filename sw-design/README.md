@@ -23,6 +23,14 @@
 6. Use [swept boss/base] to make the handle-cup.
 ```
 
+### make an electronic case?
+
+*refenrece:* `https://www.youtube.com/watch?v=0QZf9Dz1zVM&t=567s`
+
+```
+1.
+```
+
 ## make movements?
 ```
 angular: shift + [<,^,>,v]
