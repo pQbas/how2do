@@ -1,6 +1,6 @@
 ### how2do/sw-design
 
-### a cilinder in solid-works?
+## a cilinder in solid-works?
 `cilinder.sldprt`
 ```
 1. draw a circle in top-plane (sketch>circle>draw)
@@ -9,3 +9,8 @@
 4. extrude the circle to cut the cilinder (features>ectrude-cut)
 5. get more circle edges with fillet
 ```
+
+## make a cup?
+```
+```
+*reference:* `https://www.youtube.com/watch?v=4QfLiTHOcyo`
