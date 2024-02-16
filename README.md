@@ -111,6 +111,31 @@ sudo ln -s /usr/include/eigen3/Eigen /usr/local/include/Eigen
     `https://askubuntu.com/questions/491067/eigen-installation-seemed-to-work-but-i-still-cant-make-eigen-work`
 
 
+### install pangolin?
+1. follow the instructions from the pangolin-web-page
+2. add the following line to your `~/.bashrc` file:
+```
+  export LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
+```
+3. add the following lines to cmake file.
+```cmake
+# pangolin_libraries
+set(Pangolin_DIR "/home/pqbas/libraries/Pangolin")
+find_package(Pangolin REQUIRED)
+if (Pangolin_FOUND)
+    set(Pangolin_INCLUDE_DIRS "/home/pqbas/libraries/Pangolin")
+
+    message(STATUS "Pangolin Found! - ${Pangolin_DIR}")
+    message(STATUS "Pangolin Found! - ${Pangolin_INCLUDE_DIRS}")
+    message(STATUS "Pangolin Found! - ${Pangolin_LIBRARIES}")
+endif()
+
+set(GLEW_DIR "/usr/include/GL")
+find_package(GLEW REQUIRED)
+```
+
+
+
 ## SOLIDWORKS (how2learn)
 
 -  1st: Build a case for some electronic board
