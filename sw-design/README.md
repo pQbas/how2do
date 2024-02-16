@@ -12,6 +12,14 @@
 ```
 
 ## make a cup?
-*reference:* `https://www.youtube.com/watch?v=4QfLiTHOcyo`
+*reference:* `https://www.youtube.com/watch?v=4QfLiTHOcyo` <br>
+*tools:* `Reference Geometry>Plane`, `Swept Boss/Base`, `Sketch>Circle`, `Sketch>Smart Dimension`
 ```
+```
+
+## make movements?
+```
+angular: shift + [<,^,>,v]
+shifting: ctrl + [<,^,>,v]
+referenece: ctrl + space-bar
 ```
