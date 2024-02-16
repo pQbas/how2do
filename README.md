@@ -106,7 +106,7 @@ sudo apt install libeigen3-dev
 sudo ln -s /usr/include/eigen3/Eigen /usr/local/include/Eigen
 ```
 
-    *references:* 
+    - references:
     `https://linux.how2shout.com/how-to-install-eigen-c-library-on-ubuntu-22-04-or-20-04/`
     `https://askubuntu.com/questions/491067/eigen-installation-seemed-to-work-but-i-still-cant-make-eigen-work`
 
