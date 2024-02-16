@@ -117,7 +117,7 @@ sudo ln -s /usr/include/eigen3/Eigen /usr/local/include/Eigen
 ```
   export LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
 ```
-3. add the following lines to cmake file.
+3. add the following lines to the cmake file of your project.
 ```cmake
 # pangolin_libraries
 set(Pangolin_DIR "/home/pqbas/libraries/Pangolin")
@@ -132,6 +132,61 @@ endif()
 
 set(GLEW_DIR "/usr/include/GL")
 find_package(GLEW REQUIRED)
+```
+
+
+### configure cmake file?
+
+```cmake
+cmake_minimum_required(VERSION 3.28.3) # ==> cmake version on your computer
+project(scripts) # ========================> folder projects
+set(CMAKE_CXX_STANDARD 14) # ==============> c++ standard
+
+########################################
+#########     LIBRARIES      ###########
+########################################
+
+# opencv_libaries
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+
+# pangolin_libraries
+set(Pangolin_DIR "/home/pqbas/libraries/Pangolin")
+find_package(Pangolin REQUIRED)
+if (Pangolin_FOUND)
+    set(Pangolin_INCLUDE_DIRS "/home/pqbas/libraries/Pangolin")
+
+    message(STATUS "Pangolin Found! - ${Pangolin_DIR}")
+    message(STATUS "Pangolin Found! - ${Pangolin_INCLUDE_DIRS}")
+    message(STATUS "Pangolin Found! - ${Pangolin_LIBRARIES}")
+endif()
+
+set(GLEW_DIR "/usr/include/GL")
+find_package(GLEW REQUIRED)
+
+########################################
+########        FILES        ###########
+########################################
+
+# opencv_test.cpp
+add_executable(opencv_test opencv_test.cpp)
+target_link_libraries(opencv_test ${OpenCV_LIBS})
+
+# eigen_test.cpp
+add_executable(eigen_test eigen_test.cpp)
+
+# pangolin_test.cpp
+add_executable(pangolin_test pangolin_test.cpp)
+target_link_libraries(pangolin_test ${OpenCV_LIBS})
+target_link_libraries(pangolin_test ${Pangolin_LIBRARIES})
+
+
+# pangolin_test.cpp
+add_executable(stereo_vision stereo_vision.cpp)
+target_link_libraries(stereo_vision ${OpenCV_LIBS})
+target_link_libraries(stereo_vision ${Pangolin_LIBRARIES})
+
 ```
 
 
