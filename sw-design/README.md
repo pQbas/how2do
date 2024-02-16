@@ -16,11 +16,11 @@
 *tools:* `ReferenceGeometry>Plane`, `Swept Boss/Base`, `Sketch>Circle`,`Sketch>SmartDimension`,`Section View`
 ```
 1. Download the cilinder.sldprt file.
-2. Define a plane tanget to cilinder-surface, and parallel to right-plane `Plane`.
-3. Draw a circle in the plane defined in previous step with `circle`.
-4. Draw a three-point circle on top-plane  with `Circle`.
-5. Do constrains in radious and vertical alignment of circle with `Smart dimension`
-6. Use `swept boss/base` to make the handle-cup
+2. Define a plane tanget to cilinder-surface, and parallel to right-plane with [Plane].
+3. Draw a circle in the plane defined in previous step with [Circle].
+4. Draw a three-point circle on top-plane  with [Circle].
+5. Do constrains in radious and vertical alignment of circle with [Smart dimension].
+6. Use [swept boss/base] to make the handle-cup.
 ```
 
 ## make movements?
