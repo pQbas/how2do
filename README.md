@@ -48,6 +48,11 @@ unlink my_symlink_folder
 ```
 
 
+### uninstall a linux package?
+```
+sudo apt remove [your-package-installed]
+```
+
 
 # ROS
 
@@ -94,7 +99,6 @@ sudo make install
 cd [repo]/build
 sudo make uninstall
 ```
-
 
 ## SOLIDWORKS (how2learn)
 
