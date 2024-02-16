@@ -100,10 +100,11 @@ cd [repo]/build
 sudo make uninstall
 ```
 
-### EIGEN/ solve `fatal error: Eigen/Dense: No such file or directory`?
+### solve `fatal error: Eigen/Dense: No such file or directory`?
 ```
 sudo ln -s /usr/include/eigen3/Eigen /usr/local/include/Eigen
 ```
+*topic:* `eigen`
 *reference:* `https://askubuntu.com/questions/491067/eigen-installation-seemed-to-work-but-i-still-cant-make-eigen-work`
 
 
