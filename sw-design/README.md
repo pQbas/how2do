@@ -28,7 +28,12 @@
 *refenrece:* `https://www.youtube.com/watch?v=0QZf9Dz1zVM&t=567s`
 
 ```
-1.
+1. make a cuadrilater
+2. over the cuadrilater's top-face draw points (use smart dimension to fixed them).
+3. Select hole-wizard and configure the hole 
+> (Straight Tap, Tapped Hole, 4-40, Blind, 2in, and deselect Near-side-countersink).
+4. Select as position to the holes the points drawned previously.
+5. Select the shell tool to make the low part of the case.
 ```
 
 ## make movements?
