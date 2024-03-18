@@ -16,3 +16,8 @@ unlink my_symlink_folder
 ```
 sudo apt remove [your-package-installed]
 ```
+
+### how check the disk space?
+```bash
+df -h
+```
