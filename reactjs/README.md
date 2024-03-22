@@ -42,29 +42,34 @@ export default Message
 
 
 ### > create a list? 
-Bootstrap is needed to this, install it using `npm i bootstrap@5.2.3`. Remove the content in `App.css` and `index.css`. Add following in `main.jsx`:
+1. Bootstrap is needed to this, install it using `npm i bootstrap@5.2.3`. Remove the content in `App.css` and `index.css`. Add following in `main.jsx`:
 
 ```js
 import 'bootstrap/dist/css/bootstrap.css'
 ```
 
-Create a folder `react-app/src/components` with `ListGroup.jsx` with following:
+2. Create a folder `react-app/src/components` with `ListGroup.jsx` with following:
 
 ```js
 function ListGroup(){
-    return <ul className="list-group">
-    <li className="list-group-item">An item</li>
-    <li className="list-group-item">A second item</li>
-    <li className="list-group-item">A third item</li>
-    <li className="list-group-item">A fourth item</li>
-    <li className="list-group-item">And a fifth one</li>
-  </ul>
+    return(
+        <div>
+            <h1>List Group</h1>
+            <ul className="list-group">
+                <li className="list-group-item">An item</li>
+                <li className="list-group-item">A second item</li>
+                <li className="list-group-item">A third item</li>
+                <li className="list-group-item">A fourth item</li>
+                <li className="list-group-item">And a fifth one</li>
+            </ul>
+        </div>
+    )
 }
 
 export default ListGroup
 ```
 
-In `App.jsx`:
+3. In `App.jsx`:
 
 ```js
 import ListGroup from "./components/ListGroup"
