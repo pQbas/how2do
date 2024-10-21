@@ -52,6 +52,12 @@ find_package(GLEW REQUIRED)
 ```
 
 
+### How use cpp in a docker enviroment?
+```
+docker build -t cpp-env -f Dockerfile.cpp
+```
+
+
 ### configure cmake file?
 
 ```cmake
